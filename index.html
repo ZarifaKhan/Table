@@ -1,138 +1,721 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      table,
-      th,
-      td {
-        border-collapse: collapse;
-        border: 1px solid black;
-      }
-      th,
-      td {
-        text-align: center;
-        padding: 20px;
-      }
+        table{
+            border-collapse: collapse;
+            border: 3px solid darkred;
+        }
+        th,
+        td {
+            border-collapse: collapse;
+            border: 2px solid darkgreen;
+
+        }
+
+        th,
+        td {
+            padding: 5px;
+            text-align: center;
+        }
+
+        /* tr:nth-child(even) {
+        background-color: #dddddd;
+      } */
     </style>
-  </head>
-  <body>
-    <table style="width: 50%">
-      <thead>
-        <tr>
-          <th colspan="6">Time Table</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th rowspan="7">Hours</th>
-        </tr>
-        <tr>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Wed</th>
-          <th>Thu</th>
-          <th>Fri</th>
-        </tr>
-        <tr>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Arts</td>
-        </tr>
-        <tr>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Arts</td>
-        </tr>
-        <tr>
-          <td colspan="5" style="text-align: center">LUNCH</td>
-        </tr>
-        <tr>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Math</td>
-          <td colspan="2" rowspan="3">Project</td>
-        </tr>
-        <tr>
-          <td>Math</td>
-          <td>Science</td>
-          <td>Math</td>
-        </tr>
-      </tbody>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <thead>
+            <tr>
+                <th colspan="2">Company</th>
+                <th>Contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alfreds Futterkids</td>
+                <td>Maria Andres</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+            </tr>
+            <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+            </tr>
+            <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Magazzini Alimentari Riuniti </td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+            </tr>
+        </tbody>
     </table>
 
-    <h1 style="text-align: center">TABLE TIME</h1>
-    <table style="width: 100%; margin-top: 50px">
-      <thead>
+    <table style="margin-top: 50px; width: 100%;">
         <tr>
-          <th>Day/Period</th>
-          <th>I<br />9:30-10:20</th>
-          <th>II<br />10:20-11:10</th>
-          <th>III<br />11:10-12:00</th>
-          <th colspan="1">12:00-12:40</th>
-          <th>IV<br />12:40-1:30</th>
-          <th>V<br />1:30-2:20</th>
-          <th>VI<br />2:30-3:10</th>
-          <th>VII<br />3:10-4:00</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Monday</th>
-          <td>Eng</td>
-          <td>Mat</td>
-          <td>Che</td>
-          <th rowspan="7">L<br />U<br />N<br />C<br />H</th>
-          <td colspan="3">LAB</td>
-          <td>Phy</td>
+            <th>Name</th>
+            <td>John</td>
         </tr>
         <tr>
-          <th>Tuesday</th>
-          <td colspan="3">LAB</td>
-          <td>Eng</td>
-          <td>Mat</td>
-          <td>Che</td>
-          <td>SPORTS</td>
+            <th rowspan="4">Country</th>
+            <td>Azerbaijan</td>
         </tr>
         <tr>
-          <th>Wednesday</th>
-          <td>Mat</td>
-          <td>Phy</td>
-          <td>Eng</td>
-          <td>Che</td>
-          <td colspan="3">LIBRARY</td>
+            <td>Baku</td>
         </tr>
         <tr>
-          <th>Thursday</th>
-          <td>Phy</td>
-          <td>Eng</td>
-          <td>Che</td>
-          <td colspan="3">LAB</td>
-          <td>Mat</td>
+            <td>Sumgait</td>
         </tr>
         <tr>
-          <th>Friday</th>
-          <td colspan="3">LAB</td>
-          <td>Mat</td>
-          <td>Phy</td>
-          <td>Eng</td>
-          <td>Che</td>
+            <td>Ganja</td>
         </tr>
-        <tr>
-          <th>Saturday</th>
-          <td>Eng</td>
-          <td>Mat</td>
-          <td>Che</td>
-          <td colspan="3">SEMINAR</td>
-          <td>SPORTS</td>
+
         </tr>
-      </tbody>
+
     </table>
-  </body>
+
+    <table style="width: 100%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th colspan="6">STUDENTS MARK SHEET</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>General Knowladge</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Richard</td>
+                <td>12</td>
+                <td>23</td>
+                <td>34</td>
+                <td>45</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>67</td>
+                <td>78</td>
+                <td>89</td>
+                <td>90</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Tony</td>
+                <td>98</td>
+                <td>87</td>
+                <td>76</td>
+                <td>65</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>43</td>
+                <td>32</td>
+                <td>21</td>
+                <td>19</td>
+                <td>94</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="margin-top: 50px; width: 50%">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dodge</td>
+                <td>Changler</td>
+            </tr>
+            <tr>
+                <td>Maruti</td>
+                <td>Swift</td>
+            </tr>
+            <tr>
+                <td>Jeep</td>
+                <td>Wrangler</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Ford</td>
+
+            </tr>
+            <tr>
+                <td>Fuison</td>
+            </tr>
+            <tr>
+                <td>Fiesta</td>
+            </tr>
+            <tr>
+                <td>Escape</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 50%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dodge</td>
+                <td>Changler</td>
+            </tr>
+            <tr>
+                <td>Maruti</td>
+                <td>Swift</td>
+            </tr>
+            <tr>
+                <td>Jeep</td>
+                <td>Wrangler</td>
+            </tr>
+            <tr>
+                <td colspan="2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet debitis provident
+                    officiis
+                    ratione? Itaque, provident aliquam! Quos, fugit iure. Asperiores assumenda odio officia aliquid
+                    recusandae dolores voluptatem facilis in quaerat.</td>
+            </tr>
+            <tr>
+                <td>BMW</td>
+                <td>BMW F-30</td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="margin-top:50px; width: 50%;">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        <tr>
+            <td>Dodge</td>
+            <td>Changler</td>
+        </tr>
+        <tr>
+            <td>Maruti</td>
+            <td>Swift</td>
+        </tr>
+        <tr>
+            <td>Jeep</td>
+            <td>Wrangler</td>
+        </tr>
+        <tr>
+            <td>Disclaimer</td>
+            <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eos consectetur odio voluptatum alias
+                odit facilis, debitis nostrum accusamus non distinctio, voluptate quia ad eligendi? Libero explicabo
+                quos tempora hic.</td>
+        </tr>
+
+        <tr>
+            <td>BMW</td>
+            <td>BMW F-30</td>
+        </tr>
+    </table>
+
+    <table style="width: 100%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th colspan="6">STUDENTS MARK SHEET</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>Maths</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>Physics</td>
+                <td>General Knowladge</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Richard</td>
+                <td>12</td>
+                <td>23</td>
+                <td>34</td>
+                <td>45</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>67</td>
+                <td>78</td>
+                <td>89</td>
+                <td>90</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Tony</td>
+                <td>98</td>
+                <td>87</td>
+                <td>76</td>
+                <td>65</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>Scott</td>
+                <td>43</td>
+                <td>32</td>
+                <td>21</td>
+                <td>19</td>
+                <td>94</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 50%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th class="th">No</th>
+                <th>Fruit Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td">1</td>
+                <td>Orange</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td class="td">2</td>
+                <td>Mango</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td class="td">3</td>
+                <td>Pineapple</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 50%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Flovars</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4">Milk</td>
+            </tr>
+            <tr>
+                <td>Almond</td>
+            </tr>
+            <tr>
+                <td>Mango</td>
+            </tr>
+            <tr>
+                <td>Chocalatte</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">There are exclusive flavors</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 100%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th colspan="6">Time Table</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="7">Hours</td>
+            </tr>
+            <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Art</td>
+            </tr>
+
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Art</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center;">Lunch</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td colspan="2" rowspan="2" style="text-align: center;">Project</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 100%; margin-top: 100px;">
+        <thead>
+            <tr>
+                <th>Day/Period</th>
+                <th>I<br>9:30-10:20</th>
+                <th>II<br>10:20-11:10</th>
+                <th>III<br>11:10-12:00</th>
+                <th>12:00-12:40</th>
+                <th>IV<br>12:40-1:30</th>
+                <th>V<br>1:30-2:20</th>
+                <th>VI<br>2:30-3:10</th>
+                <th>VII<br>3:10-4:00</th>
+            </tr>
+        </thead>
+        <tr>
+            <th>Monday</th>
+            <td>Eng</td>
+            <td>Math</td>
+            <td>Che</td>
+            <th rowspan="7">L<br>U<br>N<br>C<br>H</th>
+            <td colspan="3">LAB</td>
+            <td>PHY</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">Lab</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td>SPORTS</td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>Mat</td>
+            <td>PHY</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3" style="text-align: center;">LIBRARY</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>PHY</td>
+            <td>Eng</td>
+            <td>Che</td>
+            <td colspan="3" style="text-align: center;">LAB</td>
+            <td>Mat</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td colspan="3" style="text-align: center;">LAB</td>
+            <td>Mat</td>
+            <td>Che</td>
+            <td>Eng</td>
+            <td>PHY</td>
+        </tr>
+        <tr>
+            <th>Saturday</th>
+            <td>Eng</td>
+            <td>Che</td>
+            <td>Mat</td>
+            <td colspan="3">SEMINAR</td>
+            <td style="text-align: center;">SPORTS</td>
+        </tr>
+
+    </table>
+
+    <table style="width: 100%; margin-top: 50px;">
+
+
+        <tr>
+            <td colspan="2">Cell 1 </td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Cell 4</td>
+
+
+        </tr>
+        <tr>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+            <td>Cell 7</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">Cell 8</td>
+        </tr>
+
+        <tr>
+            <td>Cell 9</td>
+            <td colspan="2" style="text-align: center;">Cell 10</td>
+        </tr>
+
+    </table>
+
+
+    <table style="width: 100%; margin-top: 50px;">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th colspan="3">Morning</th>
+                <th colspan="1">Lunch</th>
+                <th colspan="4">Afternoon</th>
+                <th colspan="3">Evening</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>9-<br>10<br>am</td>
+                <td>10-<br>11<br>am</td>
+                <td>11-<br>12<br>am</td>
+                <td>1-2</td>
+                <td>2-<br>3<br>pm</td>
+                <td>3-<br>4<br>pm</td>
+                <td>4-<br>5<br>pm</td>
+                <td>5-6 pm</td>
+                <td>6-<br>7<br>pm</td>
+                <td>7-<br>8<br>pm</td>
+                <td>8-9<br>pm</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Work</td>
+                <td>Monday</td>
+                <td colspan="3">Development Meeting</td>
+                <td></td>
+                <td colspan="3">Client Meeting</td>
+                <td>Commute</td>
+                <td colspan="3">Free</td>
+
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td colspan="3">In office</td>
+                <td></td>
+                <td colspan="7">In Office</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lecture</td>
+                <td>Wednesday</td>
+                <td colspan="3">CSC205</td>
+                <td></td>
+                <td colspan="7">preparation</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td colspan="3">MAM200</td>
+                <td></td>
+                <td colspan="3">Tutorials<br> for <br>MAM200</td>
+                <td colspan="4">Free</td>
+            </tr>
+
+            <tr>
+                <td>Research</td>
+                <td>Friday</td>
+                <td colspan="3">Research</td>
+                <td></td>
+                <td colspan="7">Research</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table style="width: 100%; margin-top: 50px;">
+        
+            <tr>
+                <th rowspan="11">TCB</th>
+                <th>Order no:</th>
+                <td colspan="3">#ABC001</td>
+            </tr>
+            <tr>
+                <th>Order Date:</th>
+                <td colspan="3">20-Mart-2016</td>
+            </tr>
+            <tr>
+                <th colspan="4">Customer</th>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td colspan="3">John Papas</td>
+            </tr>
+            <tr>
+                <th>Adress:</th>
+                <td colspan="3">Independence Day 5th street,11511</td>
+            </tr>
+            <tr>
+                <th colspan="4">Order details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Of Mice and Men</td>
+                <td>Book</td>
+                <td>$10.00</td>
+            </tr>
+        <tr>
+            <td>2</td>
+            <td>Les Miserables</td>
+            <td>Book</td>
+            <td>$12.00</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Game of Thorones</td>
+            <td>DVD</td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Samsung Galaxy</td>
+            <td>Mobile Phone</td>
+            <td>$200.00</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right;">Total</td>
+            <td>$272</td>
+        </tr>
+    </table>
+
+    <table style="width: 100%; margin-top: 50px;">
+        <tr>
+            <th rowspan="2" colspan="2">Student</th>
+            <th colspan="4">Exam</th>
+            <th colspan="4">2nd Exam</th>
+            <th rowspan="2">Final Grade</th>
+        </tr>
+        <tr>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th rowspan="2">Grade</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th rowspan="2">Grade</th>
+
+        </tr>
+
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <td>8</td>
+            <td>7</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <th>NR</th>
+            <th>R</th>
+        </tr>
+
+        <tr>
+            <td>80538951</td>
+            <td>John</td>
+            <td>70%</td>
+            <td>100%</td>
+            <td>70%</td>
+            <td>17.6</td>
+            <td colspan="4"></td>
+            <td>17.6</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>80538951</td>
+            <td>Mary</td>
+            <td>70%</td>
+            <td>100%</td>
+            <td>70%</td>
+            <td>17.6</td>
+            <td>12</td>
+            <td>89</td>
+            <td>112</td>
+            <td>17.6</td>
+            <td>18</td>
+            <td>20</td>
+
+        </tr>
+
+        <tr>
+            <td>12345678</td>
+            <td>Claire</td>
+            <td colspan="4"></td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>50%</td>
+            <td>10.0</td>
+            <td>10.0</td>
+            <td>10</td>
+        </tr>
+    
+    </table>
+
+    
+
+
+
+</body>
+
 </html>
